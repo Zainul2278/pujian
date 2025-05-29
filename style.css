@@ -1,0 +1,56 @@
+body {
+   margin: 0;
+   padding: 0;
+   font-family: Times New Roman,Sans-Serif;
+}
+.container {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-image: linear-gradient(to right, #1f1f1f, #464646);
+   color: white;
+   background-size: 200%;
+   animation: anime 8s infinite alternate;
+}
+
+.judul {
+   font-size: 40px;
+   position: absolute;
+   top: 0;
+}
+
+.wrap {
+   width: 300px;
+   height: 300px;
+   background-color: rgb(67,67,67);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   color: #eaeaea;
+   box-shadow: 0px 0px 5px 2px white;
+   border-radius: 10px;
+}
+
+.wrap > h1 {
+   font-size: 30px;
+   background-image: linear-gradient(to bottom, #cccccc, #9d9d9d);
+   background-clip: text;
+   color: transparent;
+   filter: drop-shadow(0px 0px 2px black);
+}
+
+@keyframes anime{
+   0% {
+      background-position: left;
+   }
+   30%{
+      background-position: left;
+   }
+   100%{
+      background-position: right;
+   }
+}
